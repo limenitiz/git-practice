@@ -1,0 +1,45 @@
+git log --oneline --all --graph
+
+git merge --no-ff feat/f1
+
+git checkout master
+
+echo "upd8" > file.txt && git add . && git commit -m 'upd8'
+echo "upd7" > file.txt && git add . && git commit -m 'upd7'
+
+git merge --no-ff feat/f1-hotfix
+
+git checkout feat/f1
+
+echo "upd6" > file.txt && git add . && git commit -m 'upd6'
+echo "upd5" > file.txt && git add . && git commit -m 'upd5'
+
+git branch feat/f1-hotfix && git checkout feat/f1-hotfix
+
+git add . && git commit -m 'upd4'
+echo "upd4" > file.txt
+
+git add . && git commit -m 'upd3'
+echo "upd3" > file.txt
+
+git checkout feat/f1 && git branch feat/f1
+
+git add . && git commit -m 'upd2'
+echo "upd2" > file.txt
+
+git add . && git commit -m 'upd1'
+echo "upd1" > file.txt
+
+git add . && git commit -m 'init'
+echo "Hello world" > file.txt
+
+git init
+cd git-practice/
+mkdir git-practice
+
+
+
+ls -o --all
+git log --oneline --all --graph
+
+
